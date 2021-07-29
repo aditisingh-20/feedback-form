@@ -1,31 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-</head>
-<body>
-    <img src=Simple_logo.jpeg width="100px" alt="Company logo">
-    <div class="main-block">
-        <form>
-            <div class="title">
-                <h2>Feedback Form</h2>
-                <h4>Please take your time to rate us</h4>
-            </div>
-            <div class="info">
-                <input type="text" name="name" placeholder="Full name" required pattern="[A-z]{1, 100}">
-                <input type="tel" name="phone" placeholder="Phone number" required pattern="[0-9]{10}">
-                <select name="drop">
-                    <option value="Feedback" selected>Feedback</option>
-                    <option value="Excellent" >Excellent</option>
-                    <option value="Good" >Good</option>
-                    <option value="Better" >Can do better</option>
-                    <option value="Bad" >You suck lol</option>
-                </select>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</body>
-</html>
+<body><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="formstyle.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap" rel="stylesheet">
+        <title>Form</title>
+    </head>
+      <body>
+       
+        <div class="main-block">
+            <form>
+              <div class="main">
+                    <h2>Feedback Form!</h2>
+                    <h4>Please provide us your feedback</h4>
+                    <div class="info">
+                    <div>
+                      <input type="text" name="name" placeholder="Name" required pattern="[A-z]{1, 100}" required>
+                    </div><br>
+                    <div> 
+                     <input type="tel" name="phone" placeholder="Phone number" required pattern="[0-9]{10}" required>
+                    </div><br>
+                    <div>   
+                        <select name="drop" required>
+                        <option value="Feedback" selected>--Select--</option>
+                        <option value="Excellent" >Excellent</option>
+                        <option value="Verygood" >Very good</option>
+                        <option value="Good" >Good</option>
+                        <option value="Average" >Average</option>
+                        <option value="Poor" >Poor</option>
+                        </select>
+                  </div>
+                  <br>
+                <button type="submit">Submit</button>
+              </div>
+              </div>
+            </form>
+        </div>
+    </body>
+    </html>
